@@ -29,7 +29,7 @@ namespace lichtenberg {
 		void insulate_square(int x1, int y1, int x2, int y2, bool fill = false);
 		void insulate_circle(int x, int y, int radius, bool fill = false);
 
-		static const int MAX_LOOP_COUNT = 50000;
+		static constexpr int MAX_LOOP_COUNT = 50000;
 		typedef std::function<bool(int, int)> BreakCallBack;
 		typedef std::function<bool(int, int, const CellList2D*)> LoopCallBack;
 		void simulate(int maxloopcount = MAX_LOOP_COUNT, BreakCallBack callback_on_break = nullptr,
